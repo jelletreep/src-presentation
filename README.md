@@ -1,33 +1,44 @@
-# UU Quarto presentation template
+# Presentation SRC Whisper
 
-This is a template repository for creating a UU styled Quarto presentation. Quarto is an open source publishing system for creating (documentation) websites, presentations and books. Quarto allows you to write content using markdown, and you can create dynamic content using (among others) R and Python. Quarto will render your markdown(`.qmd`) or e.g. notebooks (`.ipynb`) to HTML, PDF, and more. 
+This repository contains the presentation for workshop Whisper on Research Cloud
 
-This repository contains [UU themed presentation example slides] written in `.qmd` files.
+[Presentation](https://jelletreep.github.io/src-presentation/presentations/src-whisper.html)
 
-[Template presentation](https://utrechtuniversity.github.io/uu-quarto-presentation-template/R/uu_template.html)
+## Getting Started: Surf Research Cloud
 
-## Getting Started:
+[Request an account](https://www.uu.nl/en/research/research-data-management/tools-services/software-and-computing/virtual-research-environments)
 
-- [Install Quarto](https://quarto.org/docs/get-started/)
-- Click the green 'Use this template' button in the top right corner of this screen
-- Choose your personal github account as 'Owner'.
-- Clone the new repository to your PC
-- Go to the presentations folder and rename `uu_template.qmd`
-- Open the `.qmd` file in RStudio or VS Code and start working on your presentation. 
-- Both [Rstudio](https://quarto.org/docs/get-started/hello/rstudio.html) and [VS Code](https://quarto.org/docs/get-started/hello/vscode.html) have Quarto extensions that can be installed and used to render and preview your presentation on your PC.
-- Commit and push your changes to GitHub and use GitHub pages to publish your presentation.
+[Instructions](https://utrechtuniversity.github.io/vre-docs/docs/workspaces/whisper.html)
 
-Check [quarto.org](https://quarto.org/) for extended documentation on how to get started.
+[Template notebook](notebooks/whisper_template.ipynb)
 
-<!-- CONTRIBUTING -->
-## Contributing
 
-Contributions are what make the open source community an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
-Any comments can be submitted as [issues](https://github.com/UtrechtUniversity/uu-quarto-presentation-template/issues/new/choose), or submit a pull request as follows:
+## Self installation
 
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
+- Follow installation instructions [WhisperX](https://github.com/m-bain/whisperX):
+
+### 1. Create Python3.10 environment
+
+`conda create --name whisperx python=3.10`
+
+`conda activate whisperx`
+
+### 2. Install PyTorch, e.g. for Linux and Windows CUDA11.8:
+
+`conda install pytorch==2.0.0 torchaudio==2.0.0 pytorch-cuda=11.8 -c pytorch -c nvidia`
+
+See other methods [here.](https://pytorch.org/get-started/previous-versions/#v200)
+
+### 3. Install WhisperX from repo
+
+`pip install git+https://github.com/m-bain/whisperx.git`
+
+### 4. Install Whisper from repo
+
+`pip install git+https://github.com/openai/whisper.git`
+
+### 5. Use the template Jupyter notebook to run Whisper
+Download the notebook and run it using the whisperx conda environment
+
+[Template notebook](notebooks/whisper_template.ipynb)

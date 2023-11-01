@@ -1,0 +1,103 @@
+--- 
+format: 
+  revealjs:
+    theme: uu.scss
+    logo: UU_logo_2021_EN_RGB.png
+    footer: "Jelle Treep"
+---
+
+# Whisper(X) on Surf Research Cloud {data-background-color="#FFCD00"}
+
+![](UU_logo_2021_EN_RGB.png){.absolute bottom=320 left=-240 width="300" height="120"}
+
+
+## Computational requirements
+::: {style="text-align: left; font-size: 1.8em; margin-top: 2em"}
+- Model
+- Audio data
+- Time
+:::
+
+## On Whisper variants
+::: {style="text-align: left; margin-top: 2em"}
+- Whisper OpenAI
+- faster-whisper
+- WhisperX
+- Whisper.cpp
+:::
+::: {style="text-align: center; font-size: 1.8em"}
+Developments are going fast  
+Not always stable!
+:::
+
+## WhisperX
+::: {style="text-align: left; margin-top: 2em"}
+- faster-whisper
+- Increased timestamp accuracy
+- Word level timestamps
+- Speaker Diarization (issues)
+
+![](images/whisperx.png)
+:::
+
+
+## Option 1: PC
+::: {style="text-align: left; margin-top: 2em"}
+Tools: Whisper.cpp or Whisperx
+
+- Few files
+- Small model
+- Patience
+:::
+
+## Option 2: VM with a good GPU
+::: {style="text-align: left; margin-top: 2em"}
+Tools: Whisper or WhisperX
+
+- <1000 files
+- Large model
+- Interactive use possible (Jupyter notebook)
+
+:::
+## Option 3: Supercomputer
+::: {style="text-align: left; margin-top: 2em"}
+Tools: Whisper.cpp or WhisperX
+
+- >1000 files
+- Large model
+- Job submission
+
+:::
+
+
+## Option 2: VM with a good GPU
+::: {style="text-align: left; margin-top: 2em"}
+Surf Research Cloud
+
+- Surf service
+- Available for all researchers
+- UU budget
+- SURF budget
+
+:::
+
+## Demo
+::: {style="text-align: left; margin-top: 2em"}
+
+[Demo](https://portal.live.surfresearchcloud.nl/)
+
+:::
+
+
+## Jupyter Notebook
+
+::: {style="text-align: left; margin-top: 2em"}
+
+[WhisperX](https://github.com/m-bain/whisperX)
+[Template notebook](https://github.com/UtrechtUniversity/researchcloud-items/blob/main/playbooks/roles/whisper/files/whisper_template.ipynb)
+
+:::
+
+# {data-background-color="#FFCD00"}
+
+![](UU_logo_2021_EN_RGB_payoff.png)
