@@ -71,7 +71,7 @@ Tools: Whisper.cpp or Whisperx
 ::: {style="text-align: left; margin-top: 2em"}
 Tools: Whisper or WhisperX
 
-- <1000 files
+- < 1000 files
 - Large model
 - Interactive use possible (Jupyter notebook)
 
@@ -80,7 +80,7 @@ Tools: Whisper or WhisperX
 ::: {style="text-align: left; margin-top: 2em"}
 Tools: Whisper.cpp or WhisperX
 
-- >1000 files
+- \> 1000 files
 - Large model
 - Job submission
 
