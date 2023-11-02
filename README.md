@@ -16,7 +16,11 @@ This repository contains the presentation for workshop Whisper on Research Cloud
 
 ## Self installation
 
-- Follow installation instructions [WhisperX](https://github.com/m-bain/whisperX):
+Instructions from [WhisperX](https://github.com/m-bain/whisperX):
+
+### 0. Install ffmpeg
+
+If not installed already, install ffmpeg first. Instructions can be found in the [Whisper GitHub repository](https://github.com/openai/whisper#setup)
 
 ### 1. Create Python3.10 environment
 
