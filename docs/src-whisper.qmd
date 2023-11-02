@@ -80,7 +80,7 @@ Tools: Whisper or WhisperX
 ::: {style="text-align: left; margin-top: 2em"}
 Tools: Whisper.cpp or WhisperX
 
-- \> 1000 files
+- $ \geq $ 1000 files
 - Large model
 - Job submission
 
