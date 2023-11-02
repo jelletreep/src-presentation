@@ -28,71 +28,6 @@
       margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
       vertical-align: middle;
     }
-    /* CSS for syntax highlighting */
-    pre > code.sourceCode { white-space: pre; position: relative; }
-    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-    pre > code.sourceCode > span:empty { height: 1.2em; }
-    .sourceCode { overflow: visible; }
-    code.sourceCode > span { color: inherit; text-decoration: inherit; }
-    div.sourceCode { margin: 1em 0; }
-    pre.sourceCode { margin: 0; }
-    @media screen {
-    div.sourceCode { overflow: auto; }
-    }
-    @media print {
-    pre > code.sourceCode { white-space: pre-wrap; }
-    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-    }
-    pre.numberSource code
-      { counter-reset: source-line 0; }
-    pre.numberSource code > span
-      { position: relative; left: -4em; counter-increment: source-line; }
-    pre.numberSource code > span > a:first-child::before
-      { content: counter(source-line);
-        position: relative; left: -1em; text-align: right; vertical-align: baseline;
-        border: none; display: inline-block;
-        -webkit-touch-callout: none; -webkit-user-select: none;
-        -khtml-user-select: none; -moz-user-select: none;
-        -ms-user-select: none; user-select: none;
-        padding: 0 4px; width: 4em;
-        color: #aaaaaa;
-      }
-    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
-    div.sourceCode
-      { color: #003b4f; background-color: #f1f3f5; }
-    @media screen {
-    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-    }
-    code span { color: #003b4f; } /* Normal */
-    code span.al { color: #ad0000; } /* Alert */
-    code span.an { color: #5e5e5e; } /* Annotation */
-    code span.at { color: #657422; } /* Attribute */
-    code span.bn { color: #ad0000; } /* BaseN */
-    code span.bu { } /* BuiltIn */
-    code span.cf { color: #003b4f; } /* ControlFlow */
-    code span.ch { color: #20794d; } /* Char */
-    code span.cn { color: #8f5902; } /* Constant */
-    code span.co { color: #5e5e5e; } /* Comment */
-    code span.cv { color: #5e5e5e; font-style: italic; } /* CommentVar */
-    code span.do { color: #5e5e5e; font-style: italic; } /* Documentation */
-    code span.dt { color: #ad0000; } /* DataType */
-    code span.dv { color: #ad0000; } /* DecVal */
-    code span.er { color: #ad0000; } /* Error */
-    code span.ex { } /* Extension */
-    code span.fl { color: #ad0000; } /* Float */
-    code span.fu { color: #4758ab; } /* Function */
-    code span.im { color: #00769e; } /* Import */
-    code span.in { color: #5e5e5e; } /* Information */
-    code span.kw { color: #003b4f; } /* Keyword */
-    code span.op { color: #5e5e5e; } /* Operator */
-    code span.ot { color: #003b4f; } /* Other */
-    code span.pp { color: #ad0000; } /* Preprocessor */
-    code span.sc { color: #5e5e5e; } /* SpecialChar */
-    code span.ss { color: #20794d; } /* SpecialString */
-    code span.st { color: #20794d; } /* String */
-    code span.va { color: #111111; } /* Variable */
-    code span.vs { color: #20794d; } /* VerbatimString */
-    code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   </style>
   <link rel="stylesheet" href="src-whisper_files/libs/revealjs/dist/theme/quarto.css">
   <link href="src-whisper_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
@@ -394,6 +329,25 @@
 <h1>Whisper(X) on Surf Research Cloud</h1>
 <p><img data-src="UU_logo_2021_EN_RGB.png" class="absolute" style="left: -240px; bottom: 320px; width: 300px; height: 120px; "></p>
 </section>
+<section id="research-engineering-team" class="slide level2">
+<h2>Research Engineering Team</h2>
+<div style="text-align: left; font-size: 1.2em; margin-top: 2em">
+<p><em>Mission: increase research impact through promoting advanced digital technologies</em></p>
+</div>
+<div style="text-align: left; font-size: 0.9em; margin-top: 2em">
+<ul>
+<li>Consultancy (Python, R, HPC, Git, Machine learning, Cloud)</li>
+<li>Hands on project support (3 months free of charge)</li>
+<li>HPC and Research cloud access</li>
+<li>Courses (python, best practices reproducible code)</li>
+<li>Where to find us:
+<ul>
+<li>RDM website</li>
+<li>Walk in hours, Programming cafe</li>
+</ul></li>
+</ul>
+</div>
+</section>
 <section id="computational-requirements" class="slide level2">
 <h2>Computational requirements</h2>
 <div style="text-align: left; font-size: 1.8em; margin-top: 2em">
@@ -410,7 +364,7 @@
 <ul>
 <li>Whisper OpenAI</li>
 <li>faster-whisper</li>
-<li>Whisperx</li>
+<li>WhisperX</li>
 <li>Whisper.cpp</li>
 </ul>
 </div>
@@ -425,15 +379,16 @@ Not always stable!</p>
 <ul>
 <li>faster-whisper</li>
 <li>Increased timestamp accuracy</li>
-<li>Speaker Diarization</li>
+<li>Word level timestamps</li>
+<li>Speaker Diarization (issues)</li>
 </ul>
 <p><img data-src="images/whisperx.png"></p>
 </div>
 </section>
-<section id="options" class="slide level2">
-<h2>Options:</h2>
+<section id="option-1-pc" class="slide level2">
+<h2>Option 1: PC</h2>
 <div style="text-align: left; margin-top: 2em">
-<p>Local computer: Whisper.cpp or Whisperx</p>
+<p>Tools: Whisper.cpp or Whisperx</p>
 <ul>
 <li>Few files</li>
 <li>Small model</li>
@@ -441,97 +396,52 @@ Not always stable!</p>
 </ul>
 </div>
 </section>
-<section id="virtual-machine" class="slide level2">
-<h2>Virtual Machine:</h2>
+<section id="option-2-vm-with-a-good-gpu" class="slide level2">
+<h2>Option 2: VM with a good GPU</h2>
 <div style="text-align: left; margin-top: 2em">
-<p>Local computer:</p>
+<p>Tools: Whisper or WhisperX</p>
 <ul>
-<li>Few files</li>
-<li>Small model</li>
-<li>Patience</li>
+<li>&lt;1000 files</li>
+<li>Large model</li>
+<li>Interactive use possible (Jupyter notebook)</li>
 </ul>
 </div>
 </section>
-<section id="line-highlighting" class="slide level2">
-<h2>Line Highlighting</h2>
+<section id="option-3-supercomputer" class="slide level2">
+<h2>Option 3: Supercomputer</h2>
+<div style="text-align: left; margin-top: 2em">
+<p>Tools: Whisper.cpp or WhisperX</p>
 <ul>
-<li>Highlight specific lines for emphasis</li>
-<li>Incrementally highlight additional lines</li>
+<li><blockquote>
+<p>1000 files</p>
+</blockquote></li>
+<li>Large model</li>
+<li>Job submission</li>
 </ul>
-<div class="sourceCode" id="cb1" data-code-line-numbers="4-5|7|10"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
-<span id="cb1-2"><a href="#cb1-2"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
-<span id="cb1-3"><a href="#cb1-3"></a>r <span class="op">=</span> np.arange(<span class="dv">0</span>, <span class="dv">2</span>, <span class="fl">0.01</span>)</span>
-<span id="cb1-4"><a href="#cb1-4"></a>theta <span class="op">=</span> <span class="dv">2</span> <span class="op">*</span> np.pi <span class="op">*</span> r</span>
-<span id="cb1-5"><a href="#cb1-5"></a>fig, ax <span class="op">=</span> plt.subplots(subplot_kw<span class="op">=</span>{<span class="st">'projection'</span>: <span class="st">'polar'</span>})</span>
-<span id="cb1-6"><a href="#cb1-6"></a>ax.plot(theta, r)</span>
-<span id="cb1-7"><a href="#cb1-7"></a>ax.set_rticks([<span class="fl">0.5</span>, <span class="dv">1</span>, <span class="fl">1.5</span>, <span class="dv">2</span>])</span>
-<span id="cb1-8"><a href="#cb1-8"></a>ax.grid(<span class="va">True</span>)</span>
-<span id="cb1-9"><a href="#cb1-9"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="footer">
-<p>Learn more: <a href="https://quarto.org/docs/presentations/revealjs/#line-highlighting">Line Highlighting</a></p>
 </div>
 </section>
-<section id="executable-code" class="slide level2">
-<h2>Executable Code</h2>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1"></a><span class="fu">plot</span>(cars)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-
-</div>
-<img data-src="src-whisper_files/figure-revealjs/unnamed-chunk-1-1.png" width="960" class="r-stretch"><div class="footer">
-<p>Learn more: <a href="https://quarto.org/docs/presentations/revealjs/#executable-code">Executable Code</a></p>
-</div>
-</section>
-<section id="latex-equations" class="slide level2">
-<h2>LaTeX Equations</h2>
-<p><a href="https://www.mathjax.org/">MathJax</a> rendering of equations to HTML</p>
-<div class="columns">
-<div class="column" style="width:40%;">
-<div class="sourceCode" id="cb3"><pre class="sourceCode numberSource tex number-lines code-with-copy"><code class="sourceCode latex"><span id="cb3-1"><a href="#cb3-1"></a><span class="kw">\begin</span>{<span class="ex">gather*</span>}</span>
-<span id="cb3-2"><a href="#cb3-2"></a><span class="ss">a_1=b_1+c_1</span><span class="sc">\\</span></span>
-<span id="cb3-3"><a href="#cb3-3"></a><span class="ss">a_2=b_2+c_2-d_2+e_2</span></span>
-<span id="cb3-4"><a href="#cb3-4"></a><span class="kw">\end</span>{<span class="ex">gather*</span>}</span>
-<span id="cb3-5"><a href="#cb3-5"></a><span class="kw">\begin</span>{<span class="ex">align</span>}</span>
-<span id="cb3-6"><a href="#cb3-6"></a><span class="ss">a_{11}&amp; =b_{11}&amp;</span></span>
-<span id="cb3-7"><a href="#cb3-7"></a><span class="ss">  a_{12}&amp; =b_{12}</span><span class="sc">\\</span></span>
-<span id="cb3-8"><a href="#cb3-8"></a><span class="ss">a_{21}&amp; =b_{21}&amp;</span></span>
-<span id="cb3-9"><a href="#cb3-9"></a><span class="ss">  a_{22}&amp; =b_{22}+c_{22}</span></span>
-<span id="cb3-10"><a href="#cb3-10"></a><span class="kw">\end</span>{<span class="ex">align</span>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div><div class="column" style="width:60%;">
-<span class="math display">\[\begin{gather*}
-a_1=b_1+c_1\\
-a_2=b_2+c_2-d_2+e_2
-\end{gather*}\]</span>
-<span class="math display">\[\begin{align}
-a_{11}&amp; =b_{11}&amp;
-  a_{12}&amp; =b_{12}\\
-a_{21}&amp; =b_{21}&amp;
-  a_{22}&amp; =b_{22}+c_{22}
-\end{align}\]</span>
-</div>
-</div>
-<div class="footer">
-<p>Learn more: <a href="https://quarto.org/docs/authoring/markdown-basics.html#equations">LaTeX Equations</a></p>
+<section id="option-2-vm-with-a-good-gpu-1" class="slide level2">
+<h2>Option 2: VM with a good GPU</h2>
+<div style="text-align: left; margin-top: 2em">
+<p>Surf Research Cloud</p>
+<ul>
+<li>Surf service</li>
+<li>Available for all researchers</li>
+<li>UU budget</li>
+<li>SURF budget</li>
+</ul>
 </div>
 </section>
-<section id="column-layout" class="slide level2 smaller">
-<h2>Column Layout</h2>
-<p>Arrange content into columns of varying widths:</p>
-<div class="columns">
-<div class="column" style="width:35%;">
-<h4 id="motor-trend-car-road-tests">Motor Trend Car Road Tests</h4>
-<p>The data was extracted from the 1974 Motor Trend US magazine, and comprises fuel consumption and 10 aspects of automobile design and performance for 32 automobiles.</p>
-</div><div class="column" style="width:3%;">
-
-</div><div class="column" style="width:62%;">
-<div class="cell">
-<div class="cell-output-display">
-<p><img data-src="src-whisper_files/figure-revealjs/unnamed-chunk-2-1.png" width="960"></p>
+<section id="demo" class="slide level2">
+<h2>Demo</h2>
+<div style="text-align: left; margin-top: 2em">
+<p><a href="https://portal.live.surfresearchcloud.nl/">Demo</a></p>
 </div>
-</div>
-</div>
-</div>
-<div class="footer">
-<p>Learn more: <a href="https://quarto.org/docs/presentations/revealjs/#multiple-columns">Multiple Columns</a></p>
+</section>
+<section id="jupyter-notebook" class="slide level2">
+<h2>Jupyter Notebook</h2>
+<div style="text-align: left; margin-top: 2em">
+<p><a href="https://github.com/m-bain/whisperX">WhisperX</a> <a href="https://github.com/UtrechtUniversity/researchcloud-items/blob/main/playbooks/roles/whisper/files/whisper_template.ipynb">Template notebook</a></p>
 </div>
 </section></section>
 <section id="section" class="title-slide slide level1 center" data-background-color="#FFCD00">
@@ -753,44 +663,6 @@ a_{21}&amp; =b_{21}&amp;
         ]
       });
     </script>
-    
-    <script>
-      // htmlwidgets need to know to resize themselves when slides are shown/hidden.
-      // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
-      // slide changes (different for each slide format).
-      (function () {
-        // dispatch for htmlwidgets
-        function fireSlideEnter() {
-          const event = window.document.createEvent("Event");
-          event.initEvent("slideenter", true, true);
-          window.document.dispatchEvent(event);
-        }
-
-        function fireSlideChanged(previousSlide, currentSlide) {
-          fireSlideEnter();
-
-          // dispatch for shiny
-          if (window.jQuery) {
-            if (previousSlide) {
-              window.jQuery(previousSlide).trigger("hidden");
-            }
-            if (currentSlide) {
-              window.jQuery(currentSlide).trigger("shown");
-            }
-          }
-        }
-
-        // hookup for slidy
-        if (window.w3c_slidy) {
-          window.w3c_slidy.add_observer(function (slide_num) {
-            // slide_num starts at position 1
-            fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
-          });
-        }
-
-      })();
-    </script>
-
     <script id="quarto-html-after-body" type="application/javascript">
     window.document.addEventListener("DOMContentLoaded", function (event) {
       const toggleBodyColorMode = (bsSheetEl) => {

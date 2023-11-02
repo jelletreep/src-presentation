@@ -11,6 +11,23 @@ format:
 ![](UU_logo_2021_EN_RGB.png){.absolute bottom=320 left=-240 width="300" height="120"}
 
 
+## Research Engineering Team
+::: {style="text-align: left; font-size: 1.2em; margin-top: 2em"}
+*Mission: increase research impact through promoting advanced digital
+technologies*
+:::
+::: {style="text-align: left; font-size: 0.9em; margin-top: 2em"}
+- Consultancy (Python, R, HPC, Git, Machine learning, Cloud)
+- Hands on project support (3 months free of charge)
+- HPC and Research cloud access
+- Courses (python, best practices reproducible code)
+- Where to find us:
+  - RDM website
+  - Walk in hours, Programming cafe
+:::
+
+
+
 ## Computational requirements
 ::: {style="text-align: left; font-size: 1.8em; margin-top: 2em"}
 - Model
