@@ -2,7 +2,7 @@
 
 This repository contains the presentation for workshop Whisper on Research Cloud
 
-[Presentation](https://jelletreep.github.io/src-presentation/src-whisper.html)
+[Presentation](https://jelletreep.github.io/workshop-whisper/src-whisper.html)
 
 ## Getting Started: Surf Research Cloud
 
